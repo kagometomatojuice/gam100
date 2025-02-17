@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      undefined - Imgur_0: -2459997212589772163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

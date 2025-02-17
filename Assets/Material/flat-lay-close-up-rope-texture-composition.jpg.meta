@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flat-lay-close-up-rope-texture-composition_0: 5793641608592060292
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

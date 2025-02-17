@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      The_Final_Catch_Game_Logo_0: -2319858473964668604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -790,7 +790,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: STARTtest
+  m_Text: START
 --- !u!222 &394985731
 CanvasRenderer:
   m_ObjectHideFlags: 0
