@@ -91,7 +91,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gosScript: {fileID: 0}
-  isGraphicActive: 0
 --- !u!1 &3949122489820169270
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +157,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 422be6d582bef4fb7943e7d0ded71e7b, type: 3}
     m_FontSize: 71
     m_FontStyle: 0
     m_BestFit: 0
