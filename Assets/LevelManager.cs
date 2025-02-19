@@ -6,15 +6,24 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     public string winSceneName;
-    public string loseSceneName; 
+    public string loseSceneName;
+
+    public Animator transition;
     
     public void ChangeSceneOnWin()
     {
-        SceneManager.LoadScene(winSceneName);
+        StartCoroutine(LoadLevel(winSceneName));
     }
     
     public void ChangeSceneOnLose()
     {
-        SceneManager.LoadScene(loseSceneName);
+        StartCoroutine(LoadLevel(loseSceneName));
+    }
+
+    IEnumerator LoadLevel(string levelName)
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(levelName);
     }
 }
