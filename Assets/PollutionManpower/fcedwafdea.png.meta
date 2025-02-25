@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 9243fca6cf884eb49b232be0aec7af17
+guid: 9bb81b955dbef4b06a342e004b159424
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3813677355231240903
-    second: The_Final_Catch_(Top_Down)_Level_Select_Initial_ LevelSelect_BG_0
+      213: -8929748188511103349
+    second: fcedwafdea_0
+  - first:
+      213: -7295576986862320051
+    second: fcedwafdea_1
+  - first:
+      213: 3158579512777073328
+    second: fcedwafdea_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,9 +78,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -100,23 +106,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: The_Final_Catch_(Top_Down)_Level_Select_Initial_ LevelSelect_BG_0
+      name: fcedwafdea_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 44
+        y: 28
+        width: 53
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c2628e4957ece430800000000000000
-      internalID: 3813677355231240903
+      spriteID: b869b1a9559231480800000000000000
+      internalID: -8929748188511103349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fcedwafdea_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 39
+        width: 681
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d468e825267e0ca90800000000000000
+      internalID: -7295576986862320051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fcedwafdea_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 32
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b267edf45785db20800000000000000
+      internalID: 3158579512777073328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fcedwafdea_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 15
+        width: 711
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d87a6ccfd5d4447aea4e29237efeb5
+      internalID: -1258552539
       vertices: []
       indices: 
       edges: []
@@ -125,7 +197,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d32a384f1e10d494eb33839ea28cbb80
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +207,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      The_Final_Catch_(Top_Down)_Level_Select_Initial_ LevelSelect_BG_0: 3813677355231240903
+      fcedwafdea_3: -1258552539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      The_Final_Catch_(Top_Down)_Level_Select_Initial_ LevelSelect_BG_0: 3813677355231240903
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
