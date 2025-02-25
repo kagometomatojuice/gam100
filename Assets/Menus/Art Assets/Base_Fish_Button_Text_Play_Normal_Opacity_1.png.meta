@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Base_Fish_Button_Text_Play_Normal_Opacity_1_0: 6785277487740038895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

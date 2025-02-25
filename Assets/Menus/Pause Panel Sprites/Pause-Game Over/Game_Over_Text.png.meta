@@ -1409,7 +1409,59 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Game_Over_Text_0: 8466576176975082182
+      Game_Over_Text_1: -2509573276928554782
+      Game_Over_Text_10: 1230815842145475371
+      Game_Over_Text_11: 7624034784102684660
+      Game_Over_Text_12: -5995934971582375281
+      Game_Over_Text_13: -6926092553911955219
+      Game_Over_Text_14: 8177451831521898080
+      Game_Over_Text_15: 7858381511171156026
+      Game_Over_Text_16: 5109106831255577081
+      Game_Over_Text_17: -6555168891798513308
+      Game_Over_Text_18: -286989691517227560
+      Game_Over_Text_19: -8894476312828884620
+      Game_Over_Text_2: 570458103903371372
+      Game_Over_Text_20: 8451553970536334629
+      Game_Over_Text_21: -551704627326760045
+      Game_Over_Text_22: -6192131360303293181
+      Game_Over_Text_23: -1964703452976776525
+      Game_Over_Text_24: -419795118280921149
+      Game_Over_Text_25: 8297146290596180393
+      Game_Over_Text_26: -1017620945313657267
+      Game_Over_Text_27: -6335710773334511743
+      Game_Over_Text_28: -6804661286778288200
+      Game_Over_Text_29: -942642263392464636
+      Game_Over_Text_3: 1718121454636976620
+      Game_Over_Text_30: -1379775270040543336
+      Game_Over_Text_31: 4107745706493717023
+      Game_Over_Text_32: 5682028015573250204
+      Game_Over_Text_33: 6198701926872746005
+      Game_Over_Text_34: 4363749737298398009
+      Game_Over_Text_35: 4649114197854301088
+      Game_Over_Text_36: -7859846139248252879
+      Game_Over_Text_37: 3053942247776049434
+      Game_Over_Text_38: -7753202986029481818
+      Game_Over_Text_39: -2066938282030484063
+      Game_Over_Text_4: -6545973328404920810
+      Game_Over_Text_40: 8698748058415945567
+      Game_Over_Text_41: 7453350441241558693
+      Game_Over_Text_42: 2483041285077811048
+      Game_Over_Text_43: -5059066346825530917
+      Game_Over_Text_44: 3582788616394916499
+      Game_Over_Text_45: -3356526899474844953
+      Game_Over_Text_46: 6850305870272821207
+      Game_Over_Text_47: 7175431150456919302
+      Game_Over_Text_48: -4147112670552898858
+      Game_Over_Text_49: 7278714736805589125
+      Game_Over_Text_5: -6246691328779060031
+      Game_Over_Text_50: 3888360260945009157
+      Game_Over_Text_51: -7880903577487553021
+      Game_Over_Text_6: 5347367699767926442
+      Game_Over_Text_7: -9117487893927296745
+      Game_Over_Text_8: -2409199455571938288
+      Game_Over_Text_9: -7421214935470775619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

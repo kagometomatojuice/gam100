@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BG_Overlay_Opacity61_0: 8931164726436563746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

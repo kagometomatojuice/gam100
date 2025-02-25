@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      THE_FINAL_CATCH_-_MAIN_MENU_Button [HOVER STATE]_0: -6359290805619017450
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

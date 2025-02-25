@@ -8,11 +8,16 @@ public class BossHealthBar : MonoBehaviour
     public Image healthBarBG;
     public Gradient gradient;
     public float healthMax = 100f;
+    public Image border;
+    public Text generalText;
 
     void Start()
     {
         healthBar.gameObject.SetActive(false);
         healthBarBG.gameObject.SetActive(false);
+        border.gameObject.SetActive(false);
+        generalText.gameObject.SetActive(false);
+        
     }
     public void takeDamage(float damage)
     {
@@ -39,5 +44,7 @@ public class BossHealthBar : MonoBehaviour
         gameObject.SetActive(true);
         healthBar.gameObject.SetActive(true);
         healthBarBG.gameObject.SetActive(true);
+        border.gameObject.SetActive(true);
+        generalText.gameObject.SetActive(true);
     }
 }

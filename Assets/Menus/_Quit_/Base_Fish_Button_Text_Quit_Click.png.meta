@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Base_Fish_Button_Text_Quit_Click_0: -4966374997062935849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

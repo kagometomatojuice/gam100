@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 360f7ece4ff80f7499b148871f2efb5d
+guid: 40f0bf3de74aa4fd0a01bf4d52a7bfad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8112858228112805850
-    second: THE_FINAL_CATCH_-_MAIN_MENU_Buttons_0
+      213: -5998803286281573444
+    second: dewadewa_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: THE_FINAL_CATCH_-_MAIN_MENU_Buttons_0
+      name: dewadewa_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 350
-        height: 120
+        x: 342
+        y: 91
+        width: 57
+        height: 534
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6203b30ec66596f80800000000000000
-      internalID: -8112858228112805850
+      spriteID: cbbadb3b138ffbca0800000000000000
+      internalID: -5998803286281573444
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      THE_FINAL_CATCH_-_MAIN_MENU_Buttons_0: -8112858228112805850
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
