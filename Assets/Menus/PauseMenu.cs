@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,6 +7,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     [SerializeField] private GameObject bossHealthBar;
 
+    [Obsolete("Obsolete")]
     private void Start()
     {
         if (bossHealthBar == null)

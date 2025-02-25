@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public LevelManager lmScript;
     private void Awake()
     {
         int screenW = 1920;
@@ -13,7 +14,7 @@ public class MainMenu : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("Level1");
+        lmScript.ChangeSceneOnWin();
     }
 
     public void QuitGame()

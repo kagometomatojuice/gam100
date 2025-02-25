@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         currentTime = startingTime;
-        countdownText.gameObject.SetActive(false);
+        //countdownText.gameObject.SetActive(false);
     }
     void Update()
     {

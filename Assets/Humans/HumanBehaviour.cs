@@ -6,6 +6,13 @@ public class HumanBehaviour : MonoBehaviour
     private bool moveRight;
     private bool isMoving = true;
     
+    private Animator animator;
+    
+    private void Awake()
+    {
+        animator = GetComponent<Animator>(); 
+    }
+    
     public void SetDirection(bool isMovingRight)
     {
         moveRight = isMovingRight;
@@ -24,17 +31,22 @@ public class HumanBehaviour : MonoBehaviour
                 transform.Translate(Vector2.left * speed * Time.deltaTime);
             }
         }
+        animator.SetBool("isMoving", isMoving);
     }
 
     
     public void StopMovement()
     {
         isMoving = false;
+        animator.SetBool("isMoving", false);
+        animator.SetBool("isHooked", true);
     }
     
     public void RestartMovement()
     {
         isMoving = true;
+        animator.SetBool("isMoving", true);
+        animator.SetBool("isHooked", false);
     }
 
     private void OnDestroy()

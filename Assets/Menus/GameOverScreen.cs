@@ -7,6 +7,7 @@ public class GameOverScreen : MonoBehaviour
 {
     public Text pointsText;
     public GameObject Background;
+    public LevelManager lmScript;
     void Start()
     {
         gameObject.SetActive(false);
@@ -14,11 +15,11 @@ public class GameOverScreen : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("Level1");
+        lmScript.ChangeSceneOnWin();
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene("MainMenu");
+        lmScript.ChangeSceneOnLose();
     }
 }

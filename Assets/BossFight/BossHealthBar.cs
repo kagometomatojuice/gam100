@@ -13,10 +13,10 @@ public class BossHealthBar : MonoBehaviour
 
     void Start()
     {
-        healthBar.gameObject.SetActive(false);
-        healthBarBG.gameObject.SetActive(false);
-        border.gameObject.SetActive(false);
-        generalText.gameObject.SetActive(false);
+        // healthBar.gameObject.SetActive(false);
+        // healthBarBG.gameObject.SetActive(false);
+        // border.gameObject.SetActive(false);
+        // generalText.gameObject.SetActive(false);
         
     }
     public void takeDamage(float damage)
