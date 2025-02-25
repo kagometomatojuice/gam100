@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 40f0bf3de74aa4fd0a01bf4d52a7bfad
+guid: 10f8b3d6af466d94aa3c11b9f0ab4cbe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5998803286281573444
-    second: dewadewa_0
+      213: -5266073692234057103
+    second: In_Game_UI_Pause_Click_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dewadewa_0
+      name: In_Game_UI_Pause_Click_0
       rect:
         serializedVersion: 2
-        x: 342
-        y: 91
-        width: 57
-        height: 534
+        x: 0
+        y: 0
+        width: 127
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbbadb3b138ffbca0800000000000000
-      internalID: -5998803286281573444
+      spriteID: 17afb55b0e52be6b0800000000000000
+      internalID: -5266073692234057103
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dewadewa_0: -5998803286281573444
+      In_Game_UI_Pause_Click_0: -5266073692234057103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
