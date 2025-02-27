@@ -695,14 +695,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6793415849063192752, guid: 744fd5a4ea191407f8e67064e19c792b, type: 3}
-      propertyPath: winSceneName
-      value: GameWin
-      objectReference: {fileID: 0}
     - target: {fileID: 7300628755134300288, guid: 744fd5a4ea191407f8e67064e19c792b, type: 3}
       propertyPath: m_Name
       value: SceneManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7724555045733330565, guid: 744fd5a4ea191407f8e67064e19c792b, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 165711925}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
