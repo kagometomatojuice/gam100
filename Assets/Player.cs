@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     // public GameOverScreen gosScript;
     // public GameOverGraphic gogScript;
     public LevelManager lmScript;
+    public SpriteRenderer backgroundImage;
+    public Sprite bg0, bg25, bg50, bg75;
     
     public bool gameOverTriggered = false;
     
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour
         //gosScript.gameObject.SetActive(false);
         pollution = 50f;
         SetMaxPollution((int)maxPollution);
+        UpdateBackground(); 
     }
     
     void Update()
@@ -37,6 +40,7 @@ public class Player : MonoBehaviour
         }
         
         SetPollution((int)pollution);
+        UpdateBackground(); 
     }
     
     public void SetMaxPollution(int pollution)
@@ -65,5 +69,24 @@ public class Player : MonoBehaviour
         
         gameOverTriggered = true;
         lmScript.ChangeSceneOnLose();
+    }
+    private void UpdateBackground()
+    {
+        if (pollution <= 25)
+        {
+            backgroundImage.sprite = bg0;
+        }
+        else if (pollution > 25 && pollution <= 50)
+        {
+            backgroundImage.sprite = bg25;
+        }
+        else if (pollution > 50 && pollution <= 75)
+        {
+            backgroundImage.sprite = bg50;
+        }
+        else
+        {
+            backgroundImage.sprite = bg75;
+        }
     }
 }

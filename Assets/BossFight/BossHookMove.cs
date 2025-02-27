@@ -88,26 +88,103 @@ public class BossHookMove : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+    if (moveDown)
+    {
+        if (other.CompareTag("boss"))
+        {
+            HookBoss(other);
+        }
+        else if (other.CompareTag("trash")) // Check if the hooked object is trash
+        {
+            HookTrash(other);
+        }
+    }
+    }
+
+    void HookBoss(Collider2D other)
+    {
+        hookedObject = other.gameObject;
+        CircleCollider2D circleCollider = other.GetComponent<CircleCollider2D>();
+
+        if (circleCollider != null)
+        {
+            Vector2 bossCenter = circleCollider.bounds.center;
+
+            if (Vector2.Distance(transform.position, bossCenter) <= 3f) // Threshold for hooking
+            {
+                HumanBehaviour humanBehaviour = hookedObject.GetComponent<HumanBehaviour>();
+                if (humanBehaviour != null)
+                {
+                    humanBehaviour.StopMovement();
+                }
+
+                if (bhbScript.healthMax > 50f && !isMinigameActive)
+                {
+                    bhbScript.takeDamage(10f);
+                    moveSpeed = initialMoveSpeed;
+                    moveDown = false;
+
+                    if (hookedObject != null)
+                    {
+                        HumanBehaviour hookedHumanBehaviour = hookedObject.GetComponent<HumanBehaviour>();
+                        if (hookedHumanBehaviour != null)
+                        {
+                            hookedHumanBehaviour.RestartMovement();
+                        }
+                        hookedObject = null;
+                    }
+                }
+                else if (bhbScript.healthMax <= 50f && !isMinigameActive)
+                {
+                    isMinigameActive = true;
+                    moveSpeed = 0;
+
+                    if (fishingMinigameScript != null)
+                    {
+                        fishingMinigameScript.hmScript = this;
+                        fishingMinigameScript.RestartMinigame();
+                    }
+                }
+
+                if (hookedObject != null)
+                    hookedOffset = hookedObject.transform.position - transform.position;
+                
+                moveDown = false;
+            }
+        }
+    }
+
+    void HookTrash(Collider2D other)
+    {
+        hookedObject = other.gameObject;
+        moveSpeed = 1; 
+        hookedOffset = hookedObject.transform.position - transform.position;
+        moveDown = false;
+    }
+
     void MoveRope()
     {
         if (isRotating || isMinigameActive)
             return;
 
         Vector3 temp = transform.position;
-        
+
         if (moveDown)
         {
-            temp -= transform.up * Time.deltaTime * moveSpeed;
+            temp -= transform.up * (Time.deltaTime * moveSpeed);
         }
         else
         {
-            temp += transform.up * Time.deltaTime * moveSpeed;
+            temp += transform.up * (Time.deltaTime * moveSpeed);
 
             if (hookedObject != null)
             {
                 hookedObject.transform.position = temp + hookedOffset;
             }
         }
+
         transform.position = temp;
 
         if (temp.y <= minY)
@@ -119,73 +196,30 @@ public class BossHookMove : MonoBehaviour
         {
             isRotating = true;
             ropeRenderer.RenderLine(temp, false);
-            moveSpeed = initialMoveSpeed;
             
+            // Restore normal speed when reaching the top
+            moveSpeed = initialMoveSpeed;
+
             if (hookedObject != null)
             {
-                hookedObject.SetActive(false);
+                if (hookedObject.CompareTag("trash")) // Destroy trash when returned
+                {
+                    Destroy(hookedObject);
+                }
+                else
+                {
+                    hookedObject.SetActive(false);
+                    lmScript.ChangeSceneOnWin();
+                }
+
                 hookedObject = null;
-                lmScript.ChangeSceneOnWin();
             }
         }
 
         ropeRenderer.RenderLine(temp, true);
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (moveDown && other.CompareTag("boss" ))
-        {
-            hookedObject = other.gameObject;
-            CircleCollider2D circleCollider = other.GetComponent<CircleCollider2D>();
-            if (circleCollider != null)
-            {
-                Vector2 humanCenter = circleCollider.bounds.center;
-
-                if (Vector2.Distance(transform.position, humanCenter) <= 3f) //threshold (larger more forgiving)
-                {
-                    HumanBehaviour humanBehaviour = hookedObject.GetComponent<HumanBehaviour>();
-                    if (humanBehaviour != null)
-                    {
-                        humanBehaviour.StopMovement();
-                    }
-
-                    if (bhbScript.healthMax > 50f && !isMinigameActive)
-                    {
-                        bhbScript.takeDamage(10f);
-                        moveSpeed = initialMoveSpeed;
-                        moveDown = false;
-                        
-                        if (hookedObject != null)
-                        {
-                            HumanBehaviour hookedHumanBehaviour = hookedObject.GetComponent<HumanBehaviour>();
-                            if (hookedHumanBehaviour != null)
-                            {
-                                hookedHumanBehaviour.RestartMovement(); 
-                            }
-                            hookedObject = null;
-                        }
-                    }
-                    
-                    else if (bhbScript.healthMax <= 50f && !isMinigameActive)
-                    {
-                        isMinigameActive = true;
-                        moveSpeed = 0;
-                        
-                        if (fishingMinigameScript != null)
-                        {
-                            fishingMinigameScript.hmScript = this;
-                            fishingMinigameScript.RestartMinigame();
-                        }
-                    }
-
-                    if (hookedObject != null) hookedOffset = hookedObject.transform.position - transform.position;
-                    moveDown = false;
-                }
-            }
-        }
-    }
     
+// ReSharper disable Unity.PerformanceAnalysis
     public void OnMinigameComplete(bool success)
     {
         isMinigameActive = false;

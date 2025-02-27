@@ -9,6 +9,7 @@ TagManager:
   - midHuman
   - smallHuman
   - boss
+  - trash
   layers:
   - Default
   - TransparentFX

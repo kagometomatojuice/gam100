@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Settings_Pencil_Slider_Icon_0: 1158013303005071013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
