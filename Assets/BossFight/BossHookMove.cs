@@ -26,6 +26,10 @@ public class BossHookMove : MonoBehaviour
     public BossMinigame fishingMinigameScript;
     public BossHealthBar bhbScript;
     public LevelManager lmScript;
+    
+    [SerializeField] private AudioClip[] bossSound;
+    private AudioSource source;
+    private int lastPlayedIndex = -1;
 
     void Awake()
     {
@@ -114,6 +118,7 @@ public class BossHookMove : MonoBehaviour
 
             if (Vector2.Distance(transform.position, bossCenter) <= 3f) // Threshold for hooking
             {
+                PlayBossSound(); // Play a random boss sound
                 HumanBehaviour humanBehaviour = hookedObject.GetComponent<HumanBehaviour>();
                 if (humanBehaviour != null)
                 {
@@ -179,7 +184,7 @@ public class BossHookMove : MonoBehaviour
         {
             temp += transform.up * (Time.deltaTime * moveSpeed);
 
-            if (hookedObject != null)
+            if (hookedObject)
             {
                 hookedObject.transform.position = temp + hookedOffset;
             }
@@ -200,7 +205,7 @@ public class BossHookMove : MonoBehaviour
             // Restore normal speed when reaching the top
             moveSpeed = initialMoveSpeed;
 
-            if (hookedObject != null)
+            if (hookedObject)
             {
                 if (hookedObject.CompareTag("trash")) // Destroy trash when returned
                 {
@@ -247,5 +252,26 @@ public class BossHookMove : MonoBehaviour
     public bool IsMinigameActive()
     {
         return isMinigameActive;
+    }
+    void PlayBossSound()
+    {
+        if (bossSound.Length > 0)
+        {
+            int randomIndex;
+            do
+            {
+                randomIndex = Random.Range(0, bossSound.Length);
+            } while (randomIndex == lastPlayedIndex && bossSound.Length > 1);
+
+            lastPlayedIndex = randomIndex;
+
+            if (source == null)
+            {
+                source = gameObject.AddComponent<AudioSource>(); // Ensure AudioSource exists
+            }
+
+            source.clip = bossSound[randomIndex];
+            source.Play();
+        }
     }
 }

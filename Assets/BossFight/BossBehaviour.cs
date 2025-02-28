@@ -25,7 +25,7 @@ public class BossBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (bhmScript != null && bhmScript.IsMinigameActive())
+        if (bhmScript && bhmScript.IsMinigameActive())
         {
             isMoving = false;
             return;
@@ -38,7 +38,7 @@ public class BossBehaviour : MonoBehaviour
         {
             if (moveRight)
             {
-                transform.Translate(Vector2.right * currentSpeed * Time.deltaTime);
+                transform.Translate(Vector2.right * (currentSpeed * Time.deltaTime));
                 if (transform.localScale.x < 0)
                 {
                     transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
@@ -46,7 +46,7 @@ public class BossBehaviour : MonoBehaviour
             }
             else
             {
-                transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
+                transform.Translate(Vector2.left * (currentSpeed * Time.deltaTime));
                 if (transform.localScale.x > 0)
                 {
                     transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);

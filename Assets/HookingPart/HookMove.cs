@@ -27,6 +27,10 @@ public class HookMove : MonoBehaviour
     public FishingMinigame fishingMinigameScript;
     public PointHUD phScript;
 
+    [SerializeField] private AudioClip[] humanSound;
+    private AudioSource source;
+    private int lastPlayedIndex = -1;
+
     void Awake()
     {
         ropeRenderer = GetComponent<RopeRenderer>();
@@ -37,6 +41,7 @@ public class HookMove : MonoBehaviour
         initialY = transform.position.y;
         initialMoveSpeed = moveSpeed;
         isRotating = true;
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -87,6 +92,7 @@ public class HookMove : MonoBehaviour
         }
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     void MoveRope()
     {
         if (isRotating || isMinigameActive)
@@ -99,14 +105,14 @@ public class HookMove : MonoBehaviour
             if (!GetComponent<CircleCollider2D>().enabled)
                 GetComponent<CircleCollider2D>().enabled = true;
             
-            temp -= transform.up * Time.deltaTime * moveSpeed;
+            temp -= transform.up * (Time.deltaTime * moveSpeed);
         }
         else
         {
             if (GetComponent<CircleCollider2D>().enabled)
                 GetComponent<CircleCollider2D>().enabled = false;
             
-            temp += transform.up * Time.deltaTime * moveSpeed;
+            temp += transform.up * (Time.deltaTime * moveSpeed);
 
             if (hookedObject != null)
             {
@@ -145,8 +151,21 @@ public class HookMove : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (moveDown && other.CompareTag("midHuman" ))
+        if (moveDown && other.CompareTag("midHuman"))
         {
+            if (humanSound.Length > 0)
+            {
+                int randomIndex;
+                do
+                {
+                    randomIndex = Random.Range(0, humanSound.Length);
+                } while (randomIndex == lastPlayedIndex && humanSound.Length > 1);
+
+                lastPlayedIndex = randomIndex;
+                source.clip = humanSound[randomIndex];
+                source.Play();
+            }
+            
             Debug.Log(other.tag);
             hookedObject = other.gameObject;
             CircleCollider2D circleCollider = other.GetComponent<CircleCollider2D>();
@@ -175,6 +194,7 @@ public class HookMove : MonoBehaviour
         }
     }
     
+    // ReSharper disable Unity.PerformanceAnalysis
     public void OnMinigameComplete(bool success)
     {
         isMinigameActive = false;
