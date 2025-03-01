@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e941658c96f6247de92c6dbf0f71e21c
+guid: ad3fbf620bc162f4cbb71167746b5caa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 157807404480105128
-    second: Prop_Throw_Trash_Bag_Shadow_0
-  - first:
-      213: -8862814551238211119
-    second: Prop_Throw_Trash_Bag_Shadow_1
+      213: -8923364623047514720
+    second: Onboarding _Tutorial_Image_Screen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Prop_Throw_Trash_Bag_Shadow_0
+      name: Onboarding _Tutorial_Image_Screen_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 28
-        width: 475
-        height: 504
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aa86fe8ff4a03200800000000000000
-      internalID: 157807404480105128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prop_Throw_Trash_Bag_Shadow_1
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 520
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d988437f15f00580800000000000000
-      internalID: -8862814551238211119
+      spriteID: 0a527f14727d92480800000000000000
+      internalID: -8923364623047514720
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Prop_Throw_Trash_Bag_Shadow_0: 157807404480105128
-      Prop_Throw_Trash_Bag_Shadow_1: -8862814551238211119
+      Onboarding _Tutorial_Image_Screen_0: -8923364623047514720
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

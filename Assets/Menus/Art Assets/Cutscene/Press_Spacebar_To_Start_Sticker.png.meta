@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 3385592d1ffda7144ba0e4a1a90415b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2941201803288511825
+    second: Press_Spacebar_To_Start_Sticker_0
+  - first:
+      213: -3387233736747865231
+    second: Press_Spacebar_To_Start_Sticker_1
+  - first:
+      213: -3490393308078150779
+    second: Press_Spacebar_To_Start_Sticker_2
+  - first:
+      213: -286264341996570672
+    second: Press_Spacebar_To_Start_Sticker_3
+  - first:
+      213: 4902245548879612142
+    second: Press_Spacebar_To_Start_Sticker_4
+  - first:
+      213: -8821325689194025770
+    second: Press_Spacebar_To_Start_Sticker_5
+  - first:
+      213: 110529130234228055
+    second: Press_Spacebar_To_Start_Sticker_6
+  - first:
+      213: 6735518489590962504
+    second: Press_Spacebar_To_Start_Sticker_7
+  - first:
+      213: -8433181016156937799
+    second: Press_Spacebar_To_Start_Sticker_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15500c9f47f31d820800000000000000
+      internalID: 2941201803288511825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 5
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17baceddcd02ef0d0800000000000000
+      internalID: -3387233736747865231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 9
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58be99977c1af8fc0800000000000000
+      internalID: -3490393308078150779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1
+        width: 339
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7fe6ff81cf60cf0800000000000000
+      internalID: -286264341996570672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_4
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 11
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee885be7a56480440800000000000000
+      internalID: 4902245548879612142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_5
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 15
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcef87e50b549580800000000000000
+      internalID: -8821325689194025770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_6
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 15
+        width: 83
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75da1f888ada88100800000000000000
+      internalID: 110529130234228055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_7
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 16
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8491526416e597d50800000000000000
+      internalID: 6735518489590962504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Spacebar_To_Start_Sticker_8
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 16
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1e565fb8257fa80800000000000000
+      internalID: -8433181016156937799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Press_Spacebar_To_Start_Sticker_0: 2941201803288511825
+      Press_Spacebar_To_Start_Sticker_1: -3387233736747865231
+      Press_Spacebar_To_Start_Sticker_2: -3490393308078150779
+      Press_Spacebar_To_Start_Sticker_3: -286264341996570672
+      Press_Spacebar_To_Start_Sticker_4: 4902245548879612142
+      Press_Spacebar_To_Start_Sticker_5: -8821325689194025770
+      Press_Spacebar_To_Start_Sticker_6: 110529130234228055
+      Press_Spacebar_To_Start_Sticker_7: 6735518489590962504
+      Press_Spacebar_To_Start_Sticker_8: -8433181016156937799
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

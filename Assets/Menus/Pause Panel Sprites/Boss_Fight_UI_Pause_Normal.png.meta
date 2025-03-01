@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e941658c96f6247de92c6dbf0f71e21c
+guid: 9e606a1b8c1e9fe44910f8eb914524f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 157807404480105128
-    second: Prop_Throw_Trash_Bag_Shadow_0
-  - first:
-      213: -8862814551238211119
-    second: Prop_Throw_Trash_Bag_Shadow_1
+      213: -3221556613595997671
+    second: Boss_Fight_UI_Pause_Normal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Prop_Throw_Trash_Bag_Shadow_0
+      name: Boss_Fight_UI_Pause_Normal_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 28
-        width: 475
-        height: 504
+        x: 0
+        y: 0
+        width: 189
+        height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aa86fe8ff4a03200800000000000000
-      internalID: 157807404480105128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prop_Throw_Trash_Bag_Shadow_1
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 520
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d988437f15f00580800000000000000
-      internalID: -8862814551238211119
+      spriteID: 91adcc6145bba43d0800000000000000
+      internalID: -3221556613595997671
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Prop_Throw_Trash_Bag_Shadow_0: 157807404480105128
-      Prop_Throw_Trash_Bag_Shadow_1: -8862814551238211119
+      Boss_Fight_UI_Pause_Normal_0: -3221556613595997671
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
