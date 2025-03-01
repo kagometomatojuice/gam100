@@ -12,7 +12,7 @@ public class FishingMinigame : MonoBehaviour
     public float pedalStrength = 1.0f;
     public float pedalSpeed = 5f;
     public bool pedalACW = true;
-    public float progressDrain = 0.1f;
+    public float progressDrain = 0.4f;
     public float missedStrength = 1.0f;
     public float markerSize = 3f; // any size >= 3 is very easy
     public float humanPollutionDecrease = 20f;

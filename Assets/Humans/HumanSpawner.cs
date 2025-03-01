@@ -9,7 +9,7 @@ public class HumanSpawner : MonoBehaviour
     public float maxSpawnRate = 3f; 
     private float spawnTimer = 0f;
     public static int activeHumans = 0;
-    public static int maxActiveHumans = 10;
+    public int maxActiveHumans = 5;
     
     void Start()
     {
@@ -20,7 +20,7 @@ public class HumanSpawner : MonoBehaviour
     {
         spawnTimer += Time.deltaTime;
 
-        if (spawnTimer >= spawnRate)
+        if (spawnTimer >= spawnRate && activeHumans < maxActiveHumans)
         {
             SpawnHuman();
             spawnTimer = 0f;
@@ -28,6 +28,7 @@ public class HumanSpawner : MonoBehaviour
         }
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     public void SpawnHuman()
     {
         int rand = Random.Range(0, midHumanPrefabs.Length);
@@ -52,7 +53,7 @@ public class HumanSpawner : MonoBehaviour
             }
         }
         
-        Destroy(human.gameObject, 10f);
+        Destroy(human.gameObject, 30f);
     }
     public static void DecrementActiveHumans()
     {

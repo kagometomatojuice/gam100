@@ -7,6 +7,7 @@ public class BossBehaviour : MonoBehaviour
     private float currentSpeed;
     private bool moveRight = true; 
     private bool isMoving = true;
+    private bool HasShield = true;
 
     public float changeSpeedInterval = 3f;
     private float speedChangeTimer;
@@ -15,12 +16,16 @@ public class BossBehaviour : MonoBehaviour
     
     public float offScreenBuffer = 2f;
     public BossHookMove bhmScript;
+    
+    private Animator bossAnimator;
+    public BossHealthBar healthBarScript;
 
     void Start()
     {
         SetRandomSpeed();
         //speedChangeTimer = changeSpeedInterval;
         screenWidth = Camera.main.orthographicSize * 2 * Screen.width / Screen.height;
+        bossAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -58,14 +63,9 @@ public class BossBehaviour : MonoBehaviour
                 moveRight = !moveRight;
                 SetRandomSpeed(); 
             }
-            
-            // speedChangeTimer -= Time.deltaTime;
-            // if (speedChangeTimer <= 0f)
-            // {
-            //     SetRandomSpeed();
-            //     speedChangeTimer = changeSpeedInterval;
-            // }
         }
+        bossAnimator.SetBool("isMoving", isMoving);
+        bossAnimator.SetBool("HasShield", HasShield);
     }
 
     private void SetRandomSpeed()
@@ -76,15 +76,26 @@ public class BossBehaviour : MonoBehaviour
     public void StopMovement()
     {
         isMoving = false;
+        bossAnimator.SetBool("HasShield", false);
+        bossAnimator.SetBool("isMoving", false);
+        bossAnimator.SetBool("isHooked", true);
     }
 
     public void RestartMovement()
     {
         isMoving = true;
     }
+    
+    public void TakeDamage(float damage)
+    {
+        if (healthBarScript == null) return;
 
-    // private void OnDestroy()
-    // {
-    //     HumanSpawner.DecrementActiveHumans();
-    // }
+        healthBarScript.takeDamage(damage);
+        
+        if (healthBarScript.healthMax <= 52f)
+        {
+            bossAnimator.SetBool("HasShield", false);
+            //Debug.Log("Shield disabled: HasShield set to false");
+        }
+    }
 }

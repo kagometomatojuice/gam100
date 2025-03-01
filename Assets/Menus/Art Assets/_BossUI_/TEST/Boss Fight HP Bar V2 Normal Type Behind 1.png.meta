@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boss Fight HP Bar V2 Normal Type Behind 1_0: 7768087200545339628
+      Boss Fight HP Bar V2 Normal Type Behind 1_1: -6957645905958552039
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

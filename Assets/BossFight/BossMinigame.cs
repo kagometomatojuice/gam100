@@ -34,7 +34,7 @@ public class BossMinigame : MonoBehaviour
                 pedalPivot.transform.localEulerAngles = new Vector3(0, 0, pedalPivot.transform.localEulerAngles.z - (pedalSpeed * Time.deltaTime));
             }
             
-            if (bhScript != null && bhScript.healthMax <= 0f)
+            if (bhScript && bhScript.healthMax <= 0f)
             {
                 MinigameDone(true); 
             }
@@ -56,14 +56,14 @@ public class BossMinigame : MonoBehaviour
         pedalACW = !pedalACW;
         markerPivot.transform.localEulerAngles = new Vector3(0, 0, Random.Range(0f, 360f));
         
-        if (bhScript != null)
+        if (bhScript)
         {
             bhScript.takeDamage(10); // reduce boss health per hit
         }
     }
     public void MissedHit()
     {
-        if (bhScript != null)
+        if (bhScript)
         {
             bhScript.heal(5); // increase boss health on miss
         }
@@ -72,7 +72,7 @@ public class BossMinigame : MonoBehaviour
     void MinigameDone(bool successState)
     {
         minigameActive = false;
-        if (hmScript != null)
+        if (hmScript)
         {
             hmScript.OnMinigameComplete(successState);
         }
@@ -80,12 +80,12 @@ public class BossMinigame : MonoBehaviour
         if (successState)
         {
             //next level cutscene
-            Debug.Log("Boss defeated!");
+            //Debug.Log("Boss defeated!");
         }
         else
         {
             // defeat cutscene
-            Debug.Log("You lost!");
+            //Debug.Log("You lost!");
         }
 
         Destroy(gameObject);

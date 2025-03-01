@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 512cd349d28fd0449b0fe526dd62d18f
+guid: 9e1b2c2f1e07b4194bbc221bbf0df7b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6404656090537071273
-    second: Boss Fight HP Bar V2 Simple Type Fill_0
+      213: -4960229840327395196
+    second: frame0003_0
+  - first:
+      213: 7078345150919799238
+    second: frame0003_1
+  - first:
+      213: 8202485845052730707
+    second: frame0003_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss Fight HP Bar V2 Simple Type Fill_0
+      name: frame0003_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 25
-        width: 695
-        height: 115
+        x: 158
+        y: 699
+        width: 67
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a21101f7c8e1e850800000000000000
-      internalID: 6404656090537071273
+      spriteID: 4883efa9d39b92bb0800000000000000
+      internalID: -4960229840327395196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frame0003_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 4
+        width: 644
+        height: 950
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1fe2e79655b3260800000000000000
+      internalID: 7078345150919799238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frame0003_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 659
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35da98dda6515d170800000000000000
+      internalID: 8202485845052730707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frame0003_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 822
+        height: 978
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69cdf15ab1a5494795621edf1507ea6
+      internalID: 1338335889
       vertices: []
       indices: 
       edges: []
@@ -125,7 +197,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8321899a915d5418b80cf48720dc22f6
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +207,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Boss Fight HP Bar V2 Simple Type Fill_0: 6404656090537071273
+      frame0003_3: 1338335889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

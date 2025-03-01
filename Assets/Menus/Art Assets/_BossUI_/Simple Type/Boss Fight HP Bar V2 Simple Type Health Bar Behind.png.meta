@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boss Fight HP Bar V2 Simple Type Health Bar Behind_0: 320270228340269705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

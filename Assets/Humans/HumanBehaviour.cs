@@ -24,11 +24,11 @@ public class HumanBehaviour : MonoBehaviour
         {
             if (moveRight)
             {
-                transform.Translate(Vector2.right * speed * Time.deltaTime);
+                transform.Translate(Vector2.right * (speed * Time.deltaTime));
             }
             else
             {
-                transform.Translate(Vector2.left * speed * Time.deltaTime);
+                transform.Translate(Vector2.left * (speed * Time.deltaTime));
             }
         }
         animator.SetBool("isMoving", isMoving);

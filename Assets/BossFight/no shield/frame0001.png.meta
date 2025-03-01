@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 512cd349d28fd0449b0fe526dd62d18f
+guid: 5cfaf8e50e1a544b9b6380983aa4c67e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6404656090537071273
-    second: Boss Fight HP Bar V2 Simple Type Fill_0
+      213: -575696589628924425
+    second: frame0001_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss Fight HP Bar V2 Simple Type Fill_0
+      name: frame0001_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 25
-        width: 695
-        height: 115
+        x: 258
+        y: 15
+        width: 514
+        height: 951
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a21101f7c8e1e850800000000000000
-      internalID: 6404656090537071273
+      spriteID: 7fd93cc7007b208f0800000000000000
+      internalID: -575696589628924425
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Boss Fight HP Bar V2 Simple Type Fill_0: 6404656090537071273
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
