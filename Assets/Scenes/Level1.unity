@@ -2609,7 +2609,7 @@ MonoBehaviour:
   spawnRate: 2
   minSpawnRate: 1
   maxSpawnRate: 3
-  maxActiveHumans: 5
+  maxActiveHumans: 6
 --- !u!1 &1855983661
 GameObject:
   m_ObjectHideFlags: 0

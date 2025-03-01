@@ -23,7 +23,6 @@ public class BossBehaviour : MonoBehaviour
     void Start()
     {
         SetRandomSpeed();
-        //speedChangeTimer = changeSpeedInterval;
         screenWidth = Camera.main.orthographicSize * 2 * Screen.width / Screen.height;
         bossAnimator = GetComponent<Animator>();
     }
@@ -58,14 +57,29 @@ public class BossBehaviour : MonoBehaviour
                 }
             }
             
-            if (transform.position.x >= screenWidth / 2 + offScreenBuffer || transform.position.x <= -screenWidth / 2 - offScreenBuffer)
+            float boundary = screenWidth / 2;
+            float bufferZone = 1f; // Small zone to prevent rapid flipping
+
+            if (moveRight && transform.position.x >= boundary + offScreenBuffer)
             {
-                moveRight = !moveRight;
-                SetRandomSpeed(); 
+                moveRight = false;
+                transform.position = new Vector2(boundary + offScreenBuffer - bufferZone, transform.position.y); 
+                SetRandomSpeed();
+            }
+            else if (!moveRight && transform.position.x <= -boundary - offScreenBuffer)
+            {
+                moveRight = true;
+                transform.position = new Vector2(-boundary - offScreenBuffer + bufferZone, transform.position.y);
+                SetRandomSpeed();
             }
         }
         bossAnimator.SetBool("isMoving", isMoving);
         bossAnimator.SetBool("HasShield", HasShield);
+
+        if (healthBarScript.healthMax <= 52f)
+        {
+            bossAnimator.SetBool("HasShield", false);
+        }
     }
 
     private void SetRandomSpeed()
@@ -76,7 +90,7 @@ public class BossBehaviour : MonoBehaviour
     public void StopMovement()
     {
         isMoving = false;
-        bossAnimator.SetBool("HasShield", false);
+        // bossAnimator.SetBool("HasShield", false);
         bossAnimator.SetBool("isMoving", false);
         bossAnimator.SetBool("isHooked", true);
     }
@@ -84,18 +98,23 @@ public class BossBehaviour : MonoBehaviour
     public void RestartMovement()
     {
         isMoving = true;
+        bossAnimator.SetBool("isMoving", true);
+        bossAnimator.SetBool("isHooked", false);
     }
     
-    public void TakeDamage(float damage)
-    {
-        if (healthBarScript == null) return;
-
-        healthBarScript.takeDamage(damage);
-        
-        if (healthBarScript.healthMax <= 52f)
-        {
-            bossAnimator.SetBool("HasShield", false);
-            //Debug.Log("Shield disabled: HasShield set to false");
-        }
-    }
+    // public void TakeDamage(float damage)
+    // {
+    //     if (healthBarScript == null) return;
+    //
+    //     healthBarScript.takeDamage(damage);
+    //     
+    //     float currentHealth = healthBarScript.healthMax; // Get the updated health value
+    //
+    //     if (currentHealth <= 50f) // Adjusted threshold to match your logic
+    //     {
+    //         HasShield = false;
+    //         bossAnimator.SetBool("HasShield", false);
+    //         Debug.Log("Shield disabled: HasShield set to false");
+    //     }
+    // }
 }

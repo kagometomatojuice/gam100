@@ -119,7 +119,7 @@ public class BossHookMove : MonoBehaviour
             if (Vector2.Distance(transform.position, bossCenter) <= 3f) // Threshold for hooking
             {
                 PlayBossSound(); // Play a random boss sound
-                HumanBehaviour humanBehaviour = hookedObject.GetComponent<HumanBehaviour>();
+                BossBehaviour humanBehaviour = hookedObject.GetComponent<BossBehaviour>();
                 if (humanBehaviour != null)
                 {
                     humanBehaviour.StopMovement();
@@ -133,7 +133,7 @@ public class BossHookMove : MonoBehaviour
 
                     if (hookedObject != null)
                     {
-                        HumanBehaviour hookedHumanBehaviour = hookedObject.GetComponent<HumanBehaviour>();
+                        BossBehaviour hookedHumanBehaviour = hookedObject.GetComponent<BossBehaviour>();
                         if (hookedHumanBehaviour != null)
                         {
                             hookedHumanBehaviour.RestartMovement();
@@ -238,7 +238,7 @@ public class BossHookMove : MonoBehaviour
             moveSpeed = initialMoveSpeed;
             if (hookedObject != null)
             {
-                HumanBehaviour humanBehaviour = hookedObject.GetComponent<HumanBehaviour>();
+                BossBehaviour humanBehaviour = hookedObject.GetComponent<BossBehaviour>();
                 if (humanBehaviour != null)
                 {
                     humanBehaviour.RestartMovement();
