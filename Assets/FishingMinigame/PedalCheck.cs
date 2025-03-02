@@ -5,10 +5,15 @@ public class PedalCheck : MonoBehaviour
 {
     public FishingMinigame fmScript;
     public bool inMarker;
+    
+    [SerializeField] private AudioClip hitSFX;
+    [SerializeField] private AudioClip missSFX;
+    private AudioSource source;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,11 +26,19 @@ public class PedalCheck : MonoBehaviour
             {
                 fmScript.SuccessfulHit();
                 //Debug.LogWarning("wow a hit!");
+                if (hitSFX)
+                {
+                    source.PlayOneShot(hitSFX);
+                }
             }
             else
             {
                 fmScript.MissedHit();
                 //Debug.LogError("Wow you suck :(");
+                if (missSFX)
+                {
+                    source.PlayOneShot(missSFX);
+                }
             }
         }
     }
