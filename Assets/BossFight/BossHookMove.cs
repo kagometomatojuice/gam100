@@ -28,6 +28,8 @@ public class BossHookMove : MonoBehaviour
     public LevelManager lmScript;
     
     [SerializeField] private AudioClip[] bossSound;
+    [SerializeField] private AudioClip hookSFX;
+    
     private AudioSource source;
     private int lastPlayedIndex = -1;
 
@@ -88,6 +90,11 @@ public class BossHookMove : MonoBehaviour
             {
                 isRotating = false;
                 moveDown = true;
+                
+                if (hookSFX)
+                {
+                    source.PlayOneShot(hookSFX);
+                }
             }
         }
     }

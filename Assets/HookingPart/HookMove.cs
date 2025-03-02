@@ -28,6 +28,10 @@ public class HookMove : MonoBehaviour
     public PointHUD phScript;
 
     [SerializeField] private AudioClip[] humanSound;
+    [SerializeField] private AudioClip victorySFX;
+    [SerializeField] private AudioClip failSFX;
+    [SerializeField] private AudioClip hookSFX;
+    
     private AudioSource source;
     private int lastPlayedIndex = -1;
 
@@ -88,6 +92,11 @@ public class HookMove : MonoBehaviour
             {
                 isRotating = false;
                 moveDown = true;
+                
+                if (hookSFX)
+                {
+                    source.PlayOneShot(hookSFX);
+                }
             }
         }
     }
@@ -203,10 +212,21 @@ public class HookMove : MonoBehaviour
         {
             moveSpeed = initialMoveSpeed;
             minigameWasSuccessful = true;
+            
+            if (victorySFX != null)
+            {
+                source.PlayOneShot(victorySFX);
+            }
         }
         else
         {
             moveSpeed = initialMoveSpeed;
+            
+            if (failSFX != null)
+            {
+                source.PlayOneShot(failSFX);
+            }
+            
             if (hookedObject != null)
             {
                 HumanBehaviour humanBehaviour = hookedObject.GetComponent<HumanBehaviour>();

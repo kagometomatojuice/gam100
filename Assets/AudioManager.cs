@@ -8,6 +8,10 @@ public class AudioManager : MonoBehaviour
     
     public AudioClip background;
 
+    // private void Awake()
+    // {
+    //     DontDestroyOnLoad(gameObject);
+    // }
     private void Start()
     {
         musicSource.clip = background;
