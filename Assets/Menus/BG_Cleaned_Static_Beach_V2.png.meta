@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BG_Cleaned_Static_Beach_V2_0: 3302075725269572138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
