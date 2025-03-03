@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Onboarding _Tutorial_Image_Screen_Grey_Hook_0: -5810519067181975143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

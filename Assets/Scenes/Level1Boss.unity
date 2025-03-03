@@ -4195,7 +4195,7 @@ PrefabInstance:
     - target: {fileID: 1320307861263998293, guid: 254c98dab198c40aca0db88255ac86f8, type: 3}
       propertyPath: hookSFX
       value: 
-      objectReference: {fileID: 8300000, guid: 77986c8d9b6814a61a0281b7f8bf9319, type: 3}
+      objectReference: {fileID: 8300000, guid: 36e5e5ffac9ae4e1f93912658e651cb9, type: 3}
     - target: {fileID: 1320307861263998293, guid: 254c98dab198c40aca0db88255ac86f8, type: 3}
       propertyPath: lmScript
       value: 
