@@ -21,8 +21,19 @@ public class SettingsMenu : MonoBehaviour
         }
         
         SetMusicVolume();
+
+        if (PlayerPrefs.HasKey("sfxVolume"))
+        {
+            LoadSfxVolume();
+        }
+        else
+        {
+            SetSfxVolume();
+        }
+
+        SetSfxVolume();
     }
-    
+
     public void SetMusicVolume()
     {
         float volume = volumeSlider.value;
@@ -35,5 +46,23 @@ public class SettingsMenu : MonoBehaviour
         volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
         
         SetMusicVolume();
+    }
+
+    public void SetSfxVolume()
+
+    {
+        float volume = sfxSlider.value;
+        audioMixer.SetFloat("sfxVolume", volume);
+        PlayerPrefs.SetFloat("sfxVolume", volume);
+        Debug.Log("sfxVolume: " + volume);  
+    }
+
+    private void LoadSfxVolume()
+    {
+        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
+
+        SetSfxVolume();
+
+
     }
 }
