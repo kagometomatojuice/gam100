@@ -4211,7 +4211,7 @@ PrefabInstance:
     - target: {fileID: 1320307861263998293, guid: 254c98dab198c40aca0db88255ac86f8, type: 3}
       propertyPath: hookedObject
       value: 
-      objectReference: {fileID: 857880335}
+      objectReference: {fileID: 0}
     - target: {fileID: 1320307861263998293, guid: 254c98dab198c40aca0db88255ac86f8, type: 3}
       propertyPath: bossSound.Array.size
       value: 4

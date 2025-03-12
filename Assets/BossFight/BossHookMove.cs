@@ -43,6 +43,7 @@ public class BossHookMove : MonoBehaviour
         initialY = transform.position.y;
         initialMoveSpeed = moveSpeed;
         isRotating = true;
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
