@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 1457cbc8c3d851149b6aa4998699e6f6
+guid: 89a12da2e3b239b4984c2a63f294d41f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1813817571770344145
-    second: All_Levels_Button_Normal_0
+      213: 7020796395985583568
+    second: Home_Menu_Quit_Click_0
+  - first:
+      213: -4099991548452275645
+    second: Home_Menu_Quit_Click_1
+  - first:
+      213: 2301247156810127867
+    second: Home_Menu_Quit_Click_2
+  - first:
+      213: -574119942940073097
+    second: Home_Menu_Quit_Click_3
+  - first:
+      213: -2181278926419313102
+    second: Home_Menu_Quit_Click_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: All_Levels_Button_Normal_0
+      name: Home_Menu_Quit_Click_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 184
-        height: 254
+        x: 94
+        y: 86
+        width: 92
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2d544b478604d6e0800000000000000
-      internalID: -1813817571770344145
+      spriteID: 0dd3017df11ee6160800000000000000
+      internalID: 7020796395985583568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Menu_Quit_Click_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34af56cc867e917c0800000000000000
+      internalID: -4099991548452275645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Menu_Quit_Click_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 5
+        width: 39
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf99b0ab81cafef10800000000000000
+      internalID: 2301247156810127867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Menu_Quit_Click_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2
+        width: 17
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773e69624f05808f0800000000000000
+      internalID: -574119942940073097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home_Menu_Quit_Click_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 4
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e3bb29f5a8ab1e0800000000000000
+      internalID: -2181278926419313102
       vertices: []
       indices: 
       edges: []
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      All_Levels_Button_Normal_0: -1813817571770344145
+      Home_Menu_Quit_Click_0: 7020796395985583568
+      Home_Menu_Quit_Click_1: -4099991548452275645
+      Home_Menu_Quit_Click_2: 2301247156810127867
+      Home_Menu_Quit_Click_3: -574119942940073097
+      Home_Menu_Quit_Click_4: -2181278926419313102
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
