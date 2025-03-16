@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      All_Levels_Button_Shadow_Hover_0: -1113327438340835803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      The_Final_Catch_Game_Logo_Home_V3_Background_0: 868558663740585926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

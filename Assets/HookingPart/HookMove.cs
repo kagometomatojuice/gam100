@@ -132,6 +132,7 @@ public class HookMove : MonoBehaviour
 
         if (temp.y <= minY)
         {
+            Debug.Log("Hook reached minY, stopping downward movement.");
             moveDown = false;
         }
 

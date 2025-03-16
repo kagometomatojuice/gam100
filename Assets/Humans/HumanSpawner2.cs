@@ -27,6 +27,7 @@ public class HumanSpawner2 : MonoBehaviour
         }
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     void SpawnHuman()
     {
         int rand = Random.Range(0, midHumanPrefabs.Length);
@@ -36,7 +37,7 @@ public class HumanSpawner2 : MonoBehaviour
         human.SetActive(true);
         
         HumanBehaviour humanBehaviour = human.GetComponent<HumanBehaviour>();
-        if (humanBehaviour != null)
+        if (humanBehaviour)
         {
             // set direction to move left
             humanBehaviour.SetDirection(false);

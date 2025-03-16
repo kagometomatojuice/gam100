@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      The_Final_Catch_Main_Menu_V3_Preview_0: -880079492350562644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

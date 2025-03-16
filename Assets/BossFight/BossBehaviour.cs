@@ -73,11 +73,34 @@ public class BossBehaviour : MonoBehaviour
                 SetRandomSpeed();
             }
         }
+        // Set basic movement animation
         bossAnimator.SetBool("isMoving", isMoving);
         bossAnimator.SetBool("HasShield", HasShield);
 
-        if (healthBarScript.healthMax <= 52f)
+        // Check boss health and trigger animations
+        float currentHealth = healthBarScript.healthMax;
+
+        if (currentHealth <= 82f)
         {
+            bossAnimator.SetBool("isLightlyDamaged", true);
+        }
+        else
+        {
+            bossAnimator.SetBool("isLightlyDamaged", false);
+        }
+
+        if (currentHealth <= 62f)
+        {
+            bossAnimator.SetBool("isHeavilyDamaged", true);
+        }
+        else
+        {
+            bossAnimator.SetBool("isHeavilyDamaged", false);
+        }
+
+        if (currentHealth <= 52f)
+        {
+            HasShield = false;
             bossAnimator.SetBool("HasShield", false);
         }
     }
@@ -90,7 +113,6 @@ public class BossBehaviour : MonoBehaviour
     public void StopMovement()
     {
         isMoving = false;
-        // bossAnimator.SetBool("HasShield", false);
         bossAnimator.SetBool("isMoving", false);
         bossAnimator.SetBool("isHooked", true);
     }
@@ -101,20 +123,4 @@ public class BossBehaviour : MonoBehaviour
         bossAnimator.SetBool("isMoving", true);
         bossAnimator.SetBool("isHooked", false);
     }
-    
-    // public void TakeDamage(float damage)
-    // {
-    //     if (healthBarScript == null) return;
-    //
-    //     healthBarScript.takeDamage(damage);
-    //     
-    //     float currentHealth = healthBarScript.healthMax; // Get the updated health value
-    //
-    //     if (currentHealth <= 50f) // Adjusted threshold to match your logic
-    //     {
-    //         HasShield = false;
-    //         bossAnimator.SetBool("HasShield", false);
-    //         Debug.Log("Shield disabled: HasShield set to false");
-    //     }
-    // }
 }

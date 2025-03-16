@@ -7,7 +7,7 @@ public class RopeRenderer : MonoBehaviour
     [SerializeField]
     private Transform startPosition;
     
-    private float lineWidth = 0.05f;
+    private float lineWidth = 0.02f;
 
     void Awake()
     {

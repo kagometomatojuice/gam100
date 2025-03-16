@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Credits_Button_Shadow_Normal_0: 8584086082742562479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

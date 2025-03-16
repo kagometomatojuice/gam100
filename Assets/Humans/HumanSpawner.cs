@@ -53,7 +53,7 @@ public class HumanSpawner : MonoBehaviour
             }
         }
         
-        Destroy(human.gameObject, 30f);
+        Destroy(human.gameObject, 15f);
     }
     public static void DecrementActiveHumans()
     {
