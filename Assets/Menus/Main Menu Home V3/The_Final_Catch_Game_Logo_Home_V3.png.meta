@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1457cbc8c3d851149b6aa4998699e6f6
+guid: 227acd2096a930e4fb4d00b266ab33ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1813817571770344145
-    second: All_Levels_Button_Normal_0
+      213: 2407241444230569917
+    second: The_Final_Catch_Game_Logo_Home_V3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: All_Levels_Button_Normal_0
+      name: The_Final_Catch_Game_Logo_Home_V3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 184
-        height: 254
+        x: 26
+        y: 26
+        width: 1130
+        height: 1028
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2d544b478604d6e0800000000000000
-      internalID: -1813817571770344145
+      spriteID: dbf16f3e65d386120800000000000000
+      internalID: 2407241444230569917
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      All_Levels_Button_Normal_0: -1813817571770344145
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
