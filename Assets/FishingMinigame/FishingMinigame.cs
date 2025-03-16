@@ -81,7 +81,7 @@ public class FishingMinigame : MonoBehaviour
     void MinigameDone(bool successState)
     {
         minigameActive = false;
-        if (hmScript != null)
+        if (hmScript)
         {
             hmScript.OnMinigameComplete(successState);
         }
