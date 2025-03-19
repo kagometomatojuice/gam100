@@ -29,6 +29,7 @@ public class BossHookMove : MonoBehaviour
     
     [SerializeField] private AudioClip[] bossSound;
     [SerializeField] private AudioClip hookSFX;
+    [SerializeField] private AudioClip bossHitSFX;
     
     private AudioSource source;
     private int lastPlayedIndex = -1;
@@ -127,6 +128,13 @@ public class BossHookMove : MonoBehaviour
             if (Vector2.Distance(transform.position, bossCenter) <= 3f) // Threshold for hooking
             {
                 PlayBossSound(); // Play a random boss sound
+                
+                BossBehaviour bossBehaviour = hookedObject.GetComponent<BossBehaviour>();
+                if (bossBehaviour != null && bossBehaviour.HasShieldActive() && bossHitSFX)
+                {
+                    source.PlayOneShot(bossHitSFX);
+                }
+                
                 BossBehaviour humanBehaviour = hookedObject.GetComponent<BossBehaviour>();
                 if (humanBehaviour != null)
                 {
@@ -172,7 +180,7 @@ public class BossHookMove : MonoBehaviour
     void HookTrash(Collider2D other)
     {
         hookedObject = other.gameObject;
-        moveSpeed = 1; 
+        moveSpeed = 2; 
         hookedOffset = hookedObject.transform.position - transform.position;
         moveDown = false;
     }

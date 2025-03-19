@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Win_Sticker_Rod_Adjust_0: 2142578614885520769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

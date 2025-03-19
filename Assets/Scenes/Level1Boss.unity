@@ -1091,7 +1091,7 @@ Transform:
   m_GameObject: {fileID: 809118488}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.12, y: -1.61, z: 7.5869193}
+  m_LocalPosition: {x: -6.08, y: -2.22, z: 7.5869193}
   m_LocalScale: {x: 0.3035, y: 0.3035, z: 0.3035}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1671,7 +1671,7 @@ Transform:
   m_GameObject: {fileID: 1035790260}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.87, y: -2.52, z: 7.5869193}
+  m_LocalPosition: {x: 5.06, y: -2.37, z: 7.5869193}
   m_LocalScale: {x: 0.3035, y: 0.3035, z: 0.3035}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2190,7 +2190,7 @@ Transform:
   m_GameObject: {fileID: 1228253178}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.57, y: -2.04, z: 7.5869193}
+  m_LocalPosition: {x: 2.08, y: -2.62, z: 7.5869193}
   m_LocalScale: {x: 0.3035, y: 0.3035, z: 0.3035}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2275,7 +2275,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 679528945
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 157807404480105128, guid: e941658c96f6247de92c6dbf0f71e21c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3412,7 +3412,7 @@ AudioSource:
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -4351,6 +4351,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1320307861263998293, guid: 254c98dab198c40aca0db88255ac86f8, type: 3}
+      propertyPath: bossHitSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a69ff5c0e1784b9fbee2c41916759fd, type: 3}
     - target: {fileID: 1320307861263998293, guid: 254c98dab198c40aca0db88255ac86f8, type: 3}
       propertyPath: hookedObject
       value: 

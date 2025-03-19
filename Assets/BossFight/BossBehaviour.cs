@@ -123,4 +123,8 @@ public class BossBehaviour : MonoBehaviour
         bossAnimator.SetBool("isMoving", true);
         bossAnimator.SetBool("isHooked", false);
     }
+    public bool HasShieldActive()
+    {
+        return HasShield;
+    }
 }
