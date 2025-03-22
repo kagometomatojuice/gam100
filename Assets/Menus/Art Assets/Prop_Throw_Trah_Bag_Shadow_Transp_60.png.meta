@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Prop_Throw_Trah_Bag_Shadow_Transp_60_0: -2890628732362564616
+      Prop_Throw_Trah_Bag_Shadow_Transp_60_1: -5575373971381754380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

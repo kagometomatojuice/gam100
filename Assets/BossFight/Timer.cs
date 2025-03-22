@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float currentTime;
-    public float startingTime = 60f;
+    public float startingTime = 90f;
     [SerializeField] Text countdownText;
     public LevelManager lmScript;
     void Start()

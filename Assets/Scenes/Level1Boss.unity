@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startingTime: 60
+  startingTime: 90
   countdownText: {fileID: 2032669757}
   lmScript: {fileID: 61501985}
 --- !u!1 &880250273
@@ -2618,7 +2618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minSpeed: 3
-  maxSpeed: 10
+  maxSpeed: 6
   changeSpeedInterval: 3
   offScreenBuffer: 2
   bhmScript: {fileID: 1696737788}
