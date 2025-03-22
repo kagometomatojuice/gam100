@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 768b69b124dd1d141a75a2c8ea844729
+guid: 0474df4f5daee4d10a9e7fd83f512e26
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1271950153677418528
-    second: General speech bubble 1_0
+      213: 3763591334513442814
+    second: Fish&Cheap_Logo_PNG_1080H_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: General speech bubble 1_0
+      name: Fish&Cheap_Logo_PNG_1080H_0
       rect:
         serializedVersion: 2
-        x: 264
-        y: 126
-        width: 1282
-        height: 888
+        x: 0
+        y: 0
+        width: 640
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02032f9fcefd6a110800000000000000
-      internalID: 1271950153677418528
+      spriteID: eff796dd066fa3430800000000000000
+      internalID: 3763591334513442814
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      General speech bubble 1_0: 1271950153677418528
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
