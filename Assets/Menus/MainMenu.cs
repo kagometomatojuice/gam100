@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     {
         int screenW = 1920;
         int screenH = 1080;
-        bool isFullScreen = true;
+        bool isFullScreen = false;
         
         Screen.SetResolution(screenW, screenH, isFullScreen);
     }
