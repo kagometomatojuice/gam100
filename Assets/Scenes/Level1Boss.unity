@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startingTime: 90
+  startingTime: 60
   countdownText: {fileID: 2032669757}
   lmScript: {fileID: 61501985}
 --- !u!1 &880250273
@@ -4349,7 +4349,7 @@ PrefabInstance:
       objectReference: {fileID: 1586857819}
     - target: {fileID: 1320307861263998293, guid: 254c98dab198c40aca0db88255ac86f8, type: 3}
       propertyPath: moveSpeed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1320307861263998293, guid: 254c98dab198c40aca0db88255ac86f8, type: 3}
       propertyPath: bossHitSFX
