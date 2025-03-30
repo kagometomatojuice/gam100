@@ -370,7 +370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 469430688204107388, guid: 837550a3942e14454a3f29a814bd28a9, type: 3}
       propertyPath: m_Text
-      value: YOU FAILED. THE OCEAN WILL CONTINUE TO BE POLLUTED TO UNINHABITABILITY
+      value: YOU FAILED. THE OCEAN WILL CONTINUE TO BE POLLUTED TO UNINHABITABILITY.
       objectReference: {fileID: 0}
     - target: {fileID: 469430688204107388, guid: 837550a3942e14454a3f29a814bd28a9, type: 3}
       propertyPath: m_Color.a
