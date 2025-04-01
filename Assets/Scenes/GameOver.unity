@@ -176,6 +176,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5992636999081963378, guid: fc0627747c4ff4636b3d057fe13bdf6e, type: 3}
+      propertyPath: audioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 6809afc4aeeeb45c4ae7fdcd230b354d, type: 2}
+    - target: {fileID: 5992636999081963378, guid: fc0627747c4ff4636b3d057fe13bdf6e, type: 3}
       propertyPath: background
       value: 
       objectReference: {fileID: 8300000, guid: da23a8eb50ae74a7486c2ce9441a499a, type: 3}

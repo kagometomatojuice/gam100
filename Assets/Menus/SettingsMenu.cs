@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -20,8 +19,6 @@ public class SettingsMenu : MonoBehaviour
             SetMusicVolume();
         }
         
-        SetMusicVolume();
-
         if (PlayerPrefs.HasKey("sfxVolume"))
         {
             LoadSfxVolume();
@@ -30,8 +27,6 @@ public class SettingsMenu : MonoBehaviour
         {
             SetSfxVolume();
         }
-
-        SetSfxVolume();
     }
 
     public void SetMusicVolume()
@@ -39,30 +34,38 @@ public class SettingsMenu : MonoBehaviour
         float volume = volumeSlider.value;
         audioMixer.SetFloat("musicVolume", volume);
         PlayerPrefs.SetFloat("musicVolume", volume);
+        UpdateAllAudioManagers();
+    }
+
+    public void SetSfxVolume()
+    {
+        float volume = sfxSlider.value;
+        audioMixer.SetFloat("sfxVolume", volume);
+        PlayerPrefs.SetFloat("sfxVolume", volume);
+        UpdateAllAudioManagers();
     }
 
     private void LoadVolume()
     {
         volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
-        
         SetMusicVolume();
-    }
-
-    public void SetSfxVolume()
-
-    {
-        float volume = sfxSlider.value;
-        audioMixer.SetFloat("sfxVolume", volume);
-        PlayerPrefs.SetFloat("sfxVolume", volume);
-        Debug.Log("sfxVolume: " + volume);  
     }
 
     private void LoadSfxVolume()
     {
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
-
         SetSfxVolume();
+    }
 
-
+    private void UpdateAllAudioManagers()
+    {
+        AudioManager[] audioManagers = FindObjectsByType<AudioManager>(
+            FindObjectsInactive.Include,
+            FindObjectsSortMode.None);
+        
+        foreach (var am in audioManagers)
+        {
+            am.UpdateVolumes();
+        }
     }
 }
